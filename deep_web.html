@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link href="C:\Users\ruari\Desktop\Project_2\DARKSPARK\Style_OSINT.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="C:\Users\ruari\Desktop\Project_2\DARKSPARK\Java_OSINT.js"></script>
+  <title>DARKSPARK/DEEP_WEB</title>
+  <a href="C:\Users\ruari\Desktop\Project_2\DARKSPARK\main.html"><img src="C:\Users\ruari\Desktop\Project_2\DARKSPARK\Images\red_crown.jpg" alt="Home" style="width:100px;height:100px;"></a>
+  <button id="modeToggle" class="btn btn-outline-dark">Light/Dark Mode</button>
+</head>
+
+<body>
+  <h1>
+    <p class="text-md"></p><span style="color:red;">Deep</span></span> Web</p>
+  </h1>
+  <h2>Just how deep did that damned rabbit go?! </h2>
+  <pre id="ascii-art">
+                               Google
+                                 /\
+                                /  \
+                               /    \
+                        /\    /      \
+                       /  \  /        \    /\                 
+                      /    \/          \  /  \               
+_____________________/                  \/    \______________________            
+                    /                          \
+                   /                            \
+                  /                              \
+                 /                                \
+                /                                  \
+               /           You are here             \ 
+              /                  |                   \
+             /                   |                    \ 
+            /                    |                     \
+           /                     |                      \
+           \                    \ /             /\      /
+            \  /\                *             /  \    /
+             \/  \                            /    \  /
+                  \    /\                    /      \/
+                   \  /  \                  /
+                    \/    \                /
+                           \/\            /
+                              \          /
+                               \        /
+                                \      /
+                                 \    /
+                                  \  /
+                                   \/
+
+
+  </pre>
+  <!--intro doc-->
+  <!-- Domain -->
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+    <!-- Domain -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapse1" aria-expanded="false" aria-controls="panelsStayOpen-collapse1">
+          Access:
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapse1" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <ul>
+            <!-- Sub-Domain -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse1_1" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse1_1">
+                  Search engines:
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapse1_1" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="http://vlib.org/">Vlib</a></li>
+                    <li><a href="http://www.stumpedia.com/">Stumpedia</a></li>
+                    <li><a href="https://archive.org/">Archive</a></li>
+                    <li><a href="https://www.science.gov/">Science</a></li>
+                    <li><a href="https://www.wolframalpha.com/">Wolframalpha</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Sub-Domain 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse1_2" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse1_2">
+                  Applications:
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapse1_2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="https://www.torproject.org/">Tor</a></li>
+                    <li><a href="https://geti2p.net/en/">I2P</a></li>
+                    <li><a href="https://zeronet.io/">Zeronet</a></li>
+                    <li><a href="https://www.hyphanet.org/">Hyphanet</a></li>
+                    <li><a href="https://www.gnunet.org/en/">Gnunet</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false" aria-controls="panelsStayOpen-collapse5">
+              Categories:
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <ul>
+                <!-- Sub-Domain -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapse5_1" aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapse5_1">
+                      Indexes:
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapse5_1" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <ul>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapse5_2" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapse5_2">
+                        Markets:
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapse5_2" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+  // function to switch between light and dark modes
+  function toggleColorScheme() {
+    const body = document.body;
+    if (body.classList.contains('light-mode')) {
+      body.classList.remove('light-mode');
+      body.classList.add('dark-mode');
+    } else {
+      body.classList.remove('dark-mode');
+      body.classList.add('light-mode');
+    }
+  }
+    //toggle button event
+    const modeToggle = document.getElementById('modeToggle');
+    modeToggle.addEventListener('click', toggleColorScheme);
+  //check the user's color scheme preference and set the initial mode
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    // if dark mode is preferred, dark mode
+    document.body.classList.add('dark-mode');
+  } else {
+    // If light mode is preferred, light mode
+    document.body.classList.add('light-mode');
+  }
+        //Nodes
+        var points = [],
+          velocity2 = 5, // velocity squared
+          canvas =
+            document.getElementById('container'),
+          context = canvas.getContext('2d'),
+          radius = 5,
+          boundaryX = 175,
+          boundaryY = 175,
+          numberOfPoints = 30;
+        init();
+
+        function init() {
+          // create points
+          for (var i = 0; i < numberOfPoints; i++) {
+            createPoint();
+          }
+          // create connections
+          for (var i = 0, l = points.length; i < l; i++) {
+            var point = points[i];
+            if (i == 0) {
+              points[i].buddy = points[points.length - 1];
+            } else {
+              points[i].buddy = points[i - 1];
+            }
+          }
+
+          // animate
+          animate();
+        }
+
+        function createPoint() {
+          var point = {}, vx2, vy2;
+          point.x = Math.random() * boundaryX;
+          point.y = Math.random() * boundaryY;
+          // random vx 
+          point.vx = (Math.floor(Math.random()) * 2 - 1) * Math.random();
+          vx2 = Math.pow(point.vx, 2);
+          // vy^2 = velocity^2 - vx^2
+          vy2 = velocity2 - vx2;
+          point.vy = Math.sqrt(vy2) * (Math.random() * 2 - 1);
+          points.push(point);
+        }
+
+        function resetVelocity(point, axis, dir) {
+          var vx, vy;
+          if (axis == 'x') {
+            point.vx = dir * Math.random();
+            vx2 = Math.pow(point.vx, 2);
+            // vy^2 = velocity^2 - vx^2
+            vy2 = velocity2 - vx2;
+            point.vy = Math.sqrt(vy2) * (Math.random() * 2 - 1);
+          } else {
+            point.vy = dir * Math.random();
+            vy2 = Math.pow(point.vy, 2);
+            // vy^2 = velocity^2 - vx^2
+            vx2 = velocity2 - vy2;
+            point.vx = Math.sqrt(vx2) * (Math.random() * 2 - 1);
+          }
+        }
+
+        function drawCircle(x, y) {
+          context.beginPath();
+          context.arc(x, y, radius, 0, 2 * Math.PI, false);
+          context.fillStyle = '#97badc';
+          context.fill();
+        }
+
+        function drawLine(x1, y1, x2, y2) {
+          context.beginPath();
+          context.moveTo(x1, y1);
+          context.lineTo(x2, y2);
+          context.strokeStyle = '#8ab2d8'
+          context.stroke();
+        }
+
+        function draw() {
+          for (var i = 0, l = points.length; i < l; i++) {
+            // circles
+            var point = points[i];
+            point.x += point.vx;
+            point.y += point.vy;
+            drawCircle(point.x, point.y);
+            // lines
+            drawLine(point.x, point.y, point.buddy.x, point.buddy.y);
+            // check for edge
+            if (point.x < 0 + radius) {
+              resetVelocity(point, 'x', 1);
+            } else if (point.x > boundaryX - radius) {
+              resetVelocity(point, 'x', -1);
+            } else if (point.y < 0 + radius) {
+              resetVelocity(point, 'y', 1);
+            } else if (point.y > boundaryY - radius) {
+              resetVelocity(point, 'y', -1);
+            }
+          }
+        }
+
+        function animate() {
+          context.clearRect(0, 0, 200, 200);
+          draw();
+          requestAnimationFrame(animate);
+        }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

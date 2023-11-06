@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link href="C:\Users\ruari\Desktop\Project_2\DARKSPARK\Style_OSINT.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="C:\Users\ruari\Desktop\Project_2\DARKSPARK\Java_OSINT.js"></script>
+  <title>DARKSPARK/OSINT</title>
+  <a href="C:\Users\ruari\Desktop\Project_2\DARKSPARK\main.html"><img src="C:\Users\ruari\Desktop\Project_2\DARKSPARK\Images\red_crown.jpg" alt="Home" style="width:100px;height:100px;"></a>
+  <button id="modeToggle" class="btn btn-outline-dark">Light/Dark Mode</button>
+</head>
+
+<body>
+  <h1>
+    <p class="text-md"></p><span style="color:red;">O</span>pen <span style="color:red;">S</span>ource <span
+      style="color:red;">INT</span></span>elligence</p>
+  </h1>
+  <h2>The internet at peak precision! Available for all...</h2>
+  <pre id="ascii-art">
+      ⠀⠀⠀⠀⠀⣀⣤⣤⣤⣤⣴⣤⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣀⣴⣾⠿⠛⠋⠉⠁⠀⠀⠀⠈⠙⠻⢷⣦⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣤⣾⡿⠋⠁⠀⣠⣶⣿⡿⢿⣷⣦⡀⠀⠀⠀⠙⠿⣦⣀⠀⠀⠀⠀
+⠀⠀⢀⣴⣿⡿⠋⠀⠀⢀⣼⣿⣿⣿⣶⣿⣾⣽⣿⡆⠀⠀⠀⠀⢻⣿⣷⣶⣄⠀    
+⠀⣴⣿⣿⠋⠀⠀⠀⠀⠸⣿⣿⣿⣿⣯⣿⣿⣿⣿⣿⠀⠀⠀⠐⡄⡌⢻⣿⣿⡷⣤
+⢸⣿⣿⠃⢂⡋⠄⠀⠀⠀⢿⣿⣿⣿⣿⣿⣯⣿⣿⠏⠀⠀⠀⠀⢦⣷⣿⠿⠛⠁
+⠀⠙⠿⢾⣤⡈⠙⠂⢤⢀⠀⠙⠿⢿⣿⣿⡿⠟⠁⠀⣀⣀⣤⣶⠟⠋⠁⠀⠀⠀
+⠀⠀⠀⠀⠈⠙⠿⣾⣠⣆⣅⣀⣠⣄⣤⣴⣶⣾⣽⢿⠿⠟⠋⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠛⠙⠋⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀                  
+  </pre>
+  <!--intro doc-->
+  <!-- Domain -->
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapse1" aria-expanded="false" aria-controls="panelsStayOpen-collapse1">
+          Documentation:
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapse1" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Open-source_intelligence">OSINT Wiki</a></li>
+            <li><a href="https://www.youtube.com/watch?v=opLD4zFB5z0&t=12s">OSINT Tutorial</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Domain -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapse2" aria-expanded="false" aria-controls="panelsStayOpen-collapse2">
+          Tool collections:
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapse2" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <ul>
+            <li><a href="https://osintframework.com/">OSINT framework(USA)</a></li>
+            <li><a href="https://www.osintcombine.com/tools">OSINT combine(AUS)</a></li>
+            <li><a href="https://osintfr.com/fr/outils/">OSINT fr(FR)</a></li>
+            <li><a href="https://intelx.io/tools">IntelX (CZ)</a></li>
+            <li><a href="https://www.osintcombine.com/tools">OSINT combine(AUS)</a></li>
+            <li><a href="https://cylect.io/">Cylect</a></li>
+            <li><a href="https://i-intelligence.eu/uploads/public-documents/OSINT_Handbook_2020.pdf">The big 1.</a></li>
+          </ul>
+        </div>
+        <canvas id="container" width="200" height="200"></canvas>
+      </div>
+    </div>
+    <!-- Domain -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapse3" aria-expanded="false" aria-controls="panelsStayOpen-collapse3">
+          Images:
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <ul>
+            <!-- Sub-Domain -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse3_1" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse3_1">
+                  Origin:
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapse3_1" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="https://www.google.com/imghp">Google Images</a></li>
+                    <li><a href="https://tineye.com/">Tineye</a></li>
+                    <li><a href="https://reverseimage.net/">ReverseImage</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Sub-Domain 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse3_2" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse3_2">
+                  Facial recognition:
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapse3_2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="https://pimeyes.com/en">Pimeyes</a></li>
+                    <li><a href="https://facecheck.id/">Facecheck</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Sub-Domain 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse3_3" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapse3_3">
+                  Metadata:
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapse3_3" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="https://www.metadata2go.com/">Metadata2go</a></li>
+                    <li><a href="https://www.extractmetadata.com/">Extractmetadata</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false" aria-controls="panelsStayOpen-collapse4">
+            Transport:
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul>
+              <!-- Sub-Domain -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapse4_1" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapse4_1">
+                    Planes:
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapse4_1" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href="https://opensky-network.org/network/explorer">Opensky Net</a></li>
+                      <li><a href="https://www.flightradar24.com/">Flightradar24</a></li>
+                      <li><a href="https://airlive.net/">Airlive</a></li>
+                      <li><a href="http://www.airframes.org/">Airframes</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Sub-Domain 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapse4_2" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapse4_2">
+                    Ships and Cargo:
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapse4_2" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href="https://www.boatfax.com/">Boatfax</a></li>
+                      <li><a href="https://www.marinetraffic.com/">Marine Traffic</a></li>
+                      <li><a href="https://www.cruisingearth.com/">Cruising earth</a></li>
+                      <li><a href="https://tankertrackers.com/">Tanker Trackers</a></li>
+                      <li><a href="https://eships.net/">Eships</a></li>
+                      <li><a href="https://map.openseamap.org/">Openseamap</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Sub-Domain 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapse4_3" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapse4_3">
+                    Cars:
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapse4_3" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href="http://worldlicenseplates.com/">World license plates</a></li>
+                      <li><a href="https://www.cardetective.com/vin-decoder/">Car detective</a></li>
+                      <li><a href="https://www.autodna.com/">Auto DNA</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapse4_4" aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapse4_4">
+                      Railways:
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapse4_4" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <ul>
+                        <li><a href="https://railwebcams.net/">Rail Webcams</a></li>
+                        <li><a href="https://www.railway-technology.com/company-a-z">Railway Technology</a></li>
+                        <li><a href="https://www.openrailwaymap.org/">Openrailmap</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false" aria-controls="panelsStayOpen-collapse5">
+              Geospatial:
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <ul>
+                <!-- Sub-Domain -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapse5_1" aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapse5_1">
+                      Maps:
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapse5_1" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <ul>
+                        <li><a href="http://www.geofabrik.de/">Geofabrik</a></li>
+                        <li><a href="https://worldmap.maps.arcgis.com/home/index.html">Harvard world map</a></li>
+                        <li><a href="https://overpass-turbo.eu/">Overpass turbo</a></li>
+                        <li><a href="https://www.oldmapsonline.org/">Old maps</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapse5_2" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapse5_2">
+                        Mapping:
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapse5_2" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <ul>
+                          <li><a href="https://www.scribblemaps.com/">Scribblemaps</a></li>
+                          <li><a href="https://www.gpsvisualizer.com/">Gps visualiser</a></li>
+                          <li><a href="https://www.mapillary.com/">Mapillary</a></li>
+                          <li><a href="https://www.oldmapsonline.org/">Old maps</a></li>
+                          <li><a href="https://europe.liveuamap.com/">Live EU map</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="earth"></div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+  // function to switch between light and dark modes
+  function toggleColorScheme() {
+    const body = document.body;
+    if (body.classList.contains('light-mode')) {
+      body.classList.remove('light-mode');
+      body.classList.add('dark-mode');
+    } else {
+      body.classList.remove('dark-mode');
+      body.classList.add('light-mode');
+    }
+  }
+    //toggle button event
+    const modeToggle = document.getElementById('modeToggle');
+    modeToggle.addEventListener('click', toggleColorScheme);
+  //check the user's color scheme preference and set the initial mode
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    // if dark mode is preferred, dark mode
+    document.body.classList.add('dark-mode');
+  } else {
+    // If light mode is preferred, light mode
+    document.body.classList.add('light-mode');
+  }
+        //Nodes
+        var points = [],
+          velocity2 = 5, // velocity squared
+          canvas =
+            document.getElementById('container'),
+          context = canvas.getContext('2d'),
+          radius = 5,
+          boundaryX = 175,
+          boundaryY = 175,
+          numberOfPoints = 30;
+        init();
+
+        function init() {
+          // create points
+          for (var i = 0; i < numberOfPoints; i++) {
+            createPoint();
+          }
+          // create connections
+          for (var i = 0, l = points.length; i < l; i++) {
+            var point = points[i];
+            if (i == 0) {
+              points[i].buddy = points[points.length - 1];
+            } else {
+              points[i].buddy = points[i - 1];
+            }
+          }
+
+          // animate
+          animate();
+        }
+
+        function createPoint() {
+          var point = {}, vx2, vy2;
+          point.x = Math.random() * boundaryX;
+          point.y = Math.random() * boundaryY;
+          // random vx 
+          point.vx = (Math.floor(Math.random()) * 2 - 1) * Math.random();
+          vx2 = Math.pow(point.vx, 2);
+          // vy^2 = velocity^2 - vx^2
+          vy2 = velocity2 - vx2;
+          point.vy = Math.sqrt(vy2) * (Math.random() * 2 - 1);
+          points.push(point);
+        }
+
+        function resetVelocity(point, axis, dir) {
+          var vx, vy;
+          if (axis == 'x') {
+            point.vx = dir * Math.random();
+            vx2 = Math.pow(point.vx, 2);
+            // vy^2 = velocity^2 - vx^2
+            vy2 = velocity2 - vx2;
+            point.vy = Math.sqrt(vy2) * (Math.random() * 2 - 1);
+          } else {
+            point.vy = dir * Math.random();
+            vy2 = Math.pow(point.vy, 2);
+            // vy^2 = velocity^2 - vx^2
+            vx2 = velocity2 - vy2;
+            point.vx = Math.sqrt(vx2) * (Math.random() * 2 - 1);
+          }
+        }
+
+        function drawCircle(x, y) {
+          context.beginPath();
+          context.arc(x, y, radius, 0, 2 * Math.PI, false);
+          context.fillStyle = '#97badc';
+          context.fill();
+        }
+
+        function drawLine(x1, y1, x2, y2) {
+          context.beginPath();
+          context.moveTo(x1, y1);
+          context.lineTo(x2, y2);
+          context.strokeStyle = '#8ab2d8'
+          context.stroke();
+        }
+
+        function draw() {
+          for (var i = 0, l = points.length; i < l; i++) {
+            // circles
+            var point = points[i];
+            point.x += point.vx;
+            point.y += point.vy;
+            drawCircle(point.x, point.y);
+            // lines
+            drawLine(point.x, point.y, point.buddy.x, point.buddy.y);
+            // check for edge
+            if (point.x < 0 + radius) {
+              resetVelocity(point, 'x', 1);
+            } else if (point.x > boundaryX - radius) {
+              resetVelocity(point, 'x', -1);
+            } else if (point.y < 0 + radius) {
+              resetVelocity(point, 'y', 1);
+            } else if (point.y > boundaryY - radius) {
+              resetVelocity(point, 'y', -1);
+            }
+          }
+        }
+
+        function animate() {
+          context.clearRect(0, 0, 200, 200);
+          draw();
+          requestAnimationFrame(animate);
+        }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
