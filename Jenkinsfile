@@ -1,27 +1,13 @@
 pipeline {
-  agent any
-
-  tools {
-    maven 'Maven'
-  }
-  
-  stages {
-    stage("build") {
+  agent none
+  stages{
+    stage("Build & Analyse avec SonarQube") {
+      agent any
       steps {
-        sh 'mvn -v'
+        script {
+          sh 'mvn clean package sonar:sonar"
+        }
       }
     }
-
-  stage("test") {
-    steps {
-      echo 'Running tests'
-    }
   }
-    
-    stage("deploy") {
-      steps {
-        echo 'Deploying application'
-      }
-   }
-}
 }
